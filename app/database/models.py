@@ -22,6 +22,7 @@ class Guest(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     tg_id = mapped_column(BigInteger)
     date = mapped_column(DateTime)
+    first_time = mapped_column(Boolean)
 
 
 class Users_Subject(Base):
