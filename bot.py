@@ -5,12 +5,13 @@ from aiogram import Bot, Dispatcher, F
 from dotenv import load_dotenv
 
 from app.register.choose_subjects_hendler import subject_choose_router
-from app.handlers import router
 from app.register.register_handlers import router_register
+from app.edit_resoult.resoult_handlers import router_resoult
+from app.handlers import router
 from app.database.models import async_main
 
 
-#TODO: 
+#TODO: сделать edit_resoult: клавиатуру, занос результата в бд(создать бд для результата) и можно вынести создание dp в отдельный файл
 
 load_dotenv()
 bot = Bot(token=os.getenv('TOKEN'))
@@ -22,6 +23,7 @@ async def main():
     dp.include_router(router)
     dp.include_router(router_register)
     dp.include_router(subject_choose_router)
+    dp.include_router(router_resoult)
     await dp.start_polling(bot)
 
 
