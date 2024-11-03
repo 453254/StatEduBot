@@ -1,0 +1,16 @@
+async def formating_subjects(user_subject):
+    
+        if user_subject == 'russian': return '🇷🇺 Русский язык'
+        if user_subject == 'math': return '➗ Математика'
+        if user_subject == 'informatics': return '💽 Информатика'
+        if user_subject == 'physics': return '⚙️ Физика'
+        if user_subject == 'chemistry': return '🧪 Химия'
+        if user_subject == 'biology': return '🧬 Биология'
+        if user_subject == 'geography': return '🗺️ География'
+        if user_subject == 'history': return '🏛️ История'
+        if user_subject == 'social_science': return '💭 Обществознание'
+        if user_subject == 'literature': return '📚 Литература'
+        if user_subject == 'english': return '🇬🇧 Английский язык'
+        if user_subject == 'german': return '🇩🇪 Немецкий язык'
+        if user_subject == 'french': return '🇫🇷 Французский язык'
+        if user_subject == 'spanish': return '🇪🇸 Испанский язык'

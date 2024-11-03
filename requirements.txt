@@ -1,0 +1,8 @@
+asyncio
+logging
+python-dotenv
+load_dotenv
+aiogram
+sqlalchemy
+aiosqlite
+matplotlib
